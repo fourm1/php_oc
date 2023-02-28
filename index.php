@@ -13,3 +13,5 @@ $recipes = [
 for ($lines = 0; $lines <= 1; $lines++) {
     echo $recipes[$lines][0];
 }
+
+?>
