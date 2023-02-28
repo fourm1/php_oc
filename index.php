@@ -1,8 +1,14 @@
 <?php
-$recipe['title'] = 'Cassoulet';
-$recipe['recipe'] = 'Etape 1 : des flageolets, Etape 2 : ...';
-$recipe['author'] = 'john.doe@exemple.com';
-$recipe['enable'] = true;
 
-echo $recipe['author'];
-?>
+/**
+ * Déclaration du tableau des recettes
+ * Chaque élément du tableau est un tableau numéroté (une recette)
+ */
+$recipes = [
+    ['Cassoulet','[...]','mickael.andrieu@exemple.com',true,],
+    ['Couscous','[...]','mickael.andrieu@exemple.com',false,],
+];
+
+for ($lines = 0; $lines <= 1; $lines++) {
+    echo $recipes[$lines][0];
+}
