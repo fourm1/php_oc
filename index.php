@@ -30,3 +30,5 @@ $recipes = [
 foreach($recipes as $recipe) {
     echo $recipe['title'] . ' contribué(e) par : ' . $recipe['author'] . PHP_EOL; 
 }
+
+?>
