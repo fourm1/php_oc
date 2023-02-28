@@ -1,15 +1,32 @@
 <?php
 
-$recipe = [
-    'title' => 'Cassoulet',
-    'recipe' => 'Vous aurez besoin de flageolets...',
-    'author' => 'johndoe@example.com',
-    'enable' => true,
+$recipes = [
+    [
+        'title' => 'Cassoulet',
+        'recipe' => '',
+        'author' => 'mickael.andrieu@exemple.com',
+        'is_enabled' => true,
+    ],
+    [
+        'title' => 'Couscous',
+        'recipe' => '',
+        'author' => 'mickael.andrieu@exemple.com',
+        'is_enabled' => false,
+    ],
+    [
+        'title' => 'Escalope milanaise',
+        'recipe' => '',
+        'author' => 'mathieu.nebra@exemple.com',
+        'is_enabled' => true,
+    ],
+    [
+        'title' => 'Salade Romaine',
+        'recipe' => '',
+        'author' => 'laurene.castor@exemple.com',
+        'is_enabled' => false,
+    ],
 ];
 
-foreach ($recipe as $value)
-{
-    echo $value;
+foreach($recipes as $recipe) {
+    echo $recipe['title'] . ' contribué(e) par : ' . $recipe['author'] . PHP_EOL; 
 }
-
-?>
