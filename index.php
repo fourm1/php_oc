@@ -5,5 +5,4 @@ $recipe['author'] = 'john.doe@exemple.com';
 $recipe['enable'] = true;
 
 echo $recipe['title'];
-
 ?>
