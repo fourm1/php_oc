@@ -7,4 +7,9 @@ $recipe = [
     'enable' => true,
 ];
 
+foreach ($recipe as $value)
+{
+    echo $value;
+}
+
 ?>
